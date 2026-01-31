@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Tanmay Mahajan, a Computer Engineering Student">
+    <title>Tanmay Mahajan | Computer Engineering Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-icon">TM</span>
+                <span class="logo-text">Tanmay Mahajan</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav__toggle-input">
+            <label for="nav-toggle" class="nav__toggle">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <span class="nav__link-icon"><i class="fas fa-user"></i></span>
+                            <span class="nav__link-text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <span class="nav__link-icon"><i class="fas fa-code"></i></span>
+                            <span class="nav__link-text">Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <span class="nav__link-icon"><i class="fas fa-briefcase"></i></span>
+                            <span class="nav__link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <span class="nav__link-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="nav__link-text">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#contact" class="nav__cta">
+                    <span>Hire Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__content container">
+            <div class="hero__badge">
+                <span class="badge-dot"></span>
+                Available for freelance work
+            </div>
+            <h1 class="hero__title">
+                <span class="hero__title-line">
+                    <span class="hero__title-word">Computer</span>
+                </span>
+                <span class="hero__title-line">
+                    <span class="hero__title-word gradient-text">Engineering</span>
+                </span>
+                <span class="hero__title-line">
+                    <span class="hero__title-word">Student</span>
+                </span>
+            </h1>
+            <p class="hero__subtitle">
+                I craft beautiful digital experiences that blend stunning design
+                with seamless functionality. Let's build something amazing together.
+            </p>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#contact" class="btn btn--outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero__stats">
+                <div class="stat">
+                    <span class="stat__number">10+</span>
+                    <span class="stat__label">Projects Built</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">3+</span>
+                    <span class="stat__label">Years Coding</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">15+</span>
+                    <span class="stat__label">Technologies Known</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-icon">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Get to know me</span>
+                <h2 class="section__title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about__content">
+                <div class="about__image-wrapper">
+                    <div class="about__image-container">
+                        <div class="about__image-frame"></div>
+                        <div class="about__image">
+                            <img src="images/profile.jpg" alt="Alex Morgan Profile Picture">
+                        </div>
+                        <div class="about__image-decoration decoration-1"></div>
+                        <div class="about__image-decoration decoration-2"></div>
+                    </div>
+                    <div class="about__experience-badge">
+                        <span class="experience-number">3+</span>
+                        <span class="experience-text">Years of<br>Coding</span>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <h3 class="about__heading">
+                        I'm Tanmay Mahajan, a passionate <span class="highlight">Computer Engineering Student</span>
+                    </h3>
+                    <p class="about__description">
+                        I am currently pursuing my degree in Computer Engineering. I specialize in building
+                        innovative software solutions and have a keen interest in full-stack development and system
+                        architecture.
+                    </p>
+                    <p class="about__description">
+                        I believe in the power of clean code, thoughtful design, and continuous learning.
+                        When I'm not coding, you'll find me exploring new technologies, contributing to
+                        open-source projects, or enjoying a good cup of coffee.
+                    </p>
+                    <div class="about__details">
+                        <div class="about__detail">
+                            <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="detail-text">Mumbai, India</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="detail-text">tanmay261006@gmail.com</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="detail-icon"><i class="fas fa-graduation-cap"></i></span>
+                            <span class="detail-text">Computer Engineering</span>
+                        </div>
+                    </div>
+                    <div class="about__actions">
+                        <a href="Tanmay Mahajan Resume.pdf" class="btn btn--primary" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <div class="about__social">
+                            <a href="https://github.com/TanmayMahajan26" class="social-link" aria-label="GitHub"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tanmay-mahajan-220ab826b/" class="social-link"
+                                aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">What I do best</span>
+                <h2 class="section__title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills__content">
+                <div class="skills__categories">
+                    <div class="skill-category">
+                        <div class="skill-category__header">
+                            <div class="skill-category__icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="skill-category__title">Frontend Development</h3>
+                        </div>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">HTML5 / CSS3</span>
+                                    <span class="skill-item__percent">95%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">JavaScript / TypeScript</span>
+                                    <span class="skill-item__percent">90%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">React / Next.js</span>
+                                    <span class="skill-item__percent">88%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category__header">
+                            <div class="skill-category__icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="skill-category__title">Backend Development</h3>
+                        </div>
+                        <div class="skill-category__items">
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">Node.js / Express</span>
+                                    <span class="skill-item__percent">85%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">Python / Django</span>
+                                    <span class="skill-item__percent">80%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__info">
+                                    <span class="skill-item__name">PostgreSQL / MongoDB</span>
+                                    <span class="skill-item__percent">82%</span>
+                                </div>
+                                <div class="skill-item__bar">
+                                    <div class="skill-item__progress" style="--progress: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__tools">
+                    <h3 class="skills__tools-title">Tools & Technologies</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">My recent work</span>
+                <h2 class="section__title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects__grid">
+                <!-- Project Card 1 -->
+                <article class="project-card project-card--featured">
+                    <div class="project-card__image">
+                        <img src="images/project-1.jpg" alt="Social Spark Project">
+                        <div class="project-card__overlay">
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">GenAI</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <h3 class="project-card__title">Social Spark</h3>
+                        <p class="project-card__description">
+                            AI-powered caption and hashtag generator that analyzes input images
+                            to create engaging social media content instantly.
+                        </p>
+                        <a href="#" class="project-card__cta">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="images/project-2.jpg" alt="Wellness Tracker Project">
+                        <div class="project-card__overlay">
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">App</span>
+                            <span class="tag">Web</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                        <h3 class="project-card__title">Wellness Tracker</h3>
+                        <p class="project-card__description">
+                            A holistic health platform combining a mobile app and website
+                            to track fitness, nutrition, and mental well-being.
+                        </p>
+                        <a href="#" class="project-card__cta">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="images/project-3.jpg" alt="FRS Tracker SIH Project">
+                        <div class="project-card__overlay">
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags">
+                            <span class="tag">Hackathon</span>
+                            <span class="tag">SIH</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                        <h3 class="project-card__title">FRA Tracker (SIH)</h3>
+                        <p class="project-card__description">
+                            Selected solution for a Smart India Hackathon (SIH) problem statement.
+                            Developed a robust FRA tracking system for real-time monitoring.
+                        </p>
+                        <a href="#" class="project-card__cta">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="projects__more">
+                <a href="#" class="btn btn--outline btn--large">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__heading">Let's work together!</h3>
+                    <p class="contact__description">
+                        Have a project in mind or just want to chat? Feel free to reach out.
+                        I'm always open to discussing new opportunities and creative ideas.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__detail-content">
+                                <span class="contact__detail-label">Email</span>
+                                <a href="mailto:tanmay261006@gmail.com"
+                                    class="contact__detail-value">tanmay261006@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact__detail-content">
+                                <span class="contact__detail-label">Phone</span>
+                                <a href="tel:+919167951795" class="contact__detail-value">+91 91679 51795</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__detail-content">
+                                <span class="contact__detail-label">Location</span>
+                                <span class="contact__detail-value">Mumbai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://github.com/TanmayMahajan26" class="social-link social-link--large"
+                            aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmay-mahajan-220ab826b/"
+                            class="social-link social-link--large" aria-label="LinkedIn" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link social-link--large" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link social-link--large" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/xjgrqjqz" method="POST">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                            <span class="form-icon"><i class="fas fa-user"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Your Email</label>
+                            <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder=" ">
+                            <label for="subject" class="form-label">Subject</label>
+                            <span class="form-icon"><i class="fas fa-tag"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group--full">
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" "
+                                required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                            <span class="form-icon form-icon--textarea"><i class="fas fa-comment"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--large btn--full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="logo-icon">TM</span>
+                        <span class="logo-text">Tanmay Mahajan</span>
+                    </a>
+                    <p class="footer__tagline">
+                        Crafting digital experiences that inspire and engage.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__heading">Follow Me</h4>
+                    <div class="footer__social-links">
+                        <a href="https://github.com/TanmayMahajan26" class="social-link" aria-label="GitHub"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmay-mahajan-220ab826b/" class="social-link"
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Tanmay Mahajan. All rights reserved.
+                </p>
+                <p class="footer__made-with">
+                    Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+        <a href="#" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+</body>
+
+</html>
