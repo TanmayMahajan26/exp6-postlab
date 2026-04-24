@@ -10,7 +10,12 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = "mongodb+srv://tanmay261006_1:tanmay123@cluster1.9bpvqzm.mongodb.net/?appName=Cluster1";
+const MONGODB_URI = process.env.MONGODB_URI;
+
+if (!MONGODB_URI) {
+    console.error("FATAL ERROR: MONGODB_URI is not defined.");
+    process.exit(1);
+}
 
 mongoose.connect(MONGODB_URI)
 .then(() => console.log('Connected to MongoDB'))
