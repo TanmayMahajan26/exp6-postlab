@@ -47,18 +47,18 @@ class ContactManager {
         if (this.isEditing) {
             this.updateContact(this.editingId, contactData);
         } else {
-            // New Entry - Send to Formspree first
-            await this.sendToFormspree(contactData);
+            // New Entry - Send to backend
+            await this.sendToBackend(contactData);
         }
     }
 
-    async sendToFormspree(contactData) {
+    async sendToBackend(contactData) {
         const originalBtnText = this.submitBtnText.textContent;
         this.submitBtnText.textContent = 'Sending...';
         this.submitBtn.disabled = true;
 
         try {
-            const response = await fetch("https://formspree.io/f/xjgrqjqz", {
+            const response = await fetch("http://localhost:5000/api/contact", {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
@@ -68,8 +68,7 @@ class ContactManager {
                     name: contactData.name,
                     email: contactData.email,
                     phone: contactData.phone,
-                    message: contactData.message,
-                    _subject: `New Contact from ${contactData.name}` // Optional Formspree subject
+                    message: contactData.message
                 })
             });
 
@@ -80,14 +79,14 @@ class ContactManager {
                 alert('Message sent successfully & contact added!');
             } else {
                 const data = await response.json();
-                if (Object.hasOwn(data, 'errors')) {
-                    alert(data["errors"].map(error => error["message"]).join(", "));
+                if (data.error) {
+                    alert(data.error);
                 } else {
                     alert("Oops! There was a problem submitting your form");
                 }
             }
         } catch (error) {
-            console.error('Formspree Error:', error);
+            console.error('Backend Error:', error);
             alert("Oops! There was a problem submitting your form");
         } finally {
             this.submitBtnText.textContent = originalBtnText;
